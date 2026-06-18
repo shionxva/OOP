@@ -35,7 +35,7 @@ public:
     {
         sname = name;
         sID = studentID;
-        course = new Course(courseCode, courseName); //dynamic memory
+        course = new Course(courseCode, courseName); //dynamic memory "do this"
     }
     
     ~Student(){
@@ -45,7 +45,7 @@ public:
     void describe(){
         cout<< "Student's name: "<< sname<<endl;
         cout<< "Student's ID: "<< sID<<endl;
-        cout<< "Course's code: "<< course->getCourseCode()<<endl; //pointer cannot use course.getCourseCode()
+        cout<< "Course's code: "<< course->getCourseCode()<<endl; //"pointer cannot use" course.getCourseCode()
         cout<< "Course's name: "<< course->getCourseName()<<endl;
     }
     
